@@ -58,11 +58,22 @@ function LandingPage() {
               className="w-24 h-24 object-contain transform transition-transform duration-300 hover:scale-90"
             />
           </a>
-          <img
+          <a
+            href="https://pump.fun/CnPgRuSbwsjYE5qUa5ov4uaDEBuZW7Vb6Bs2V9arpump"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/components/buy.png"
+              alt="x Icon"
+              className="w-24 h-24 object-contain transform transition-transform duration-300 hover:scale-90"
+            />
+          </a>
+          {/* <img
             src="/components/buy.png"
             alt="Buy Icon"
             className="w-24 h-24 object-contain transform transition-transform duration-300 hover:scale-90"
-          />
+          /> */}
         </div>
       </div>
       <div className="h-full mx-auto">
