@@ -34,12 +34,23 @@ function LandingPage() {
         {/* PNG Assets with the X icon as a hyperlink */}
         <div className="absolute top-5 right-5 flex space-x-6">
           <a
-            href="https://x.com/molang_onsol?t=ogCEBXtv9DMYHYIJErMZUQ&s=09"
+            href="https://t.me/lucenfriends"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img
-              src="/components/x.png"
+              src="/components/tele.png"
+              alt="x Icon"
+              className="w-16 h-16 object-contain transform transition-transform duration-300 hover:scale-90"
+            />
+          </a>
+          <a
+            href="https://x.com/LuceFriendsAi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/x.png"
               alt="x Icon"
               className="w-24 h-24 object-contain transform transition-transform duration-300 hover:scale-90"
             />
