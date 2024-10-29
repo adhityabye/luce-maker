@@ -133,7 +133,7 @@ export default function Home() {
         >
           {Object.keys(categories).map((category) => (
             <div key={category} className="mb-6">
-              <h3 className="mb-2 text-lg font-bold text-white">
+              <h3 className="mb-2 text-lg font-bold text-pink-500">
                 {category.charAt(0).toUpperCase() + category.slice(1)}
               </h3>
 
@@ -284,7 +284,7 @@ export default function Home() {
           onClick={generateRandomSelection}
         >
           <span className="absolute inset-0 w-0 bg-pink-500 transition-all duration-300 ease-in-out group-hover:w-full"></span>
-          <span className="relative z-10">Randomize</span>
+          <span className="relative z-10">Magic</span>
         </button>
 
         <button
@@ -292,7 +292,7 @@ export default function Home() {
           onClick={downloadResult}
         >
           <span className="absolute inset-0 w-0 bg-pink-500 transition-all duration-300 ease-in-out group-hover:w-full"></span>
-          <span className="relative z-10">Download</span>
+          <span className="relative z-10">Adopt Me</span>
         </button>
       </div>
     </div>

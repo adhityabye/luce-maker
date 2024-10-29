@@ -17,8 +17,7 @@ const josefin = Josefin_Sans({
 
 export const metadata = {
   title: "Luce",
-  description:
-    "Luce, the petite white adventurer who embraces joy and reminding us that every day is an opportunity for happiness.",
+  description: "Luce",
 };
 
 export default function RootLayout({ children }) {

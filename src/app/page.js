@@ -21,12 +21,15 @@ function LandingPage() {
           playsInline
         ></video>
         {/* Button centered at the bottom */}
-        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
+        <div
+          className="absolute left-1/2 transform -translate-x-1/2"
+          style={{ bottom: "0px" }}
+        >
           <Link href="/home" passHref>
             <img
               src="/components/create.png"
               alt="Start Customizing"
-              className="w-48 md:w-56 lg:w-64 object-contain cursor-pointer transition-transform duration-300 hover:scale-105"
+              className="w-72 md:w-56 lg:w-64 object-contain cursor-pointer transition-transform duration-300 hover:scale-105"
             />
           </Link>
         </div>
