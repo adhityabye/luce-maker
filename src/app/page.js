@@ -21,12 +21,13 @@ function LandingPage() {
           playsInline
         ></video>
         {/* Button centered at the bottom */}
-        <div className="absolute bottom-24 left-1/2 transform -translate-x-1/2">
-          <Link
-            href="/home"
-            className=" text-white font-bold py-2 px-4 rounded-full border-2 bg-[#E16EAA] hover:bg-white hover:text-[#E16EAA] cursor-pointer transition-all duration-300 ease-in-out"
-          >
-            Start Customizing
+        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
+          <Link href="/home" passHref>
+            <img
+              src="/components/create.png"
+              alt="Start Customizing"
+              className="w-48 md:w-56 lg:w-64 object-contain cursor-pointer transition-transform duration-300 hover:scale-105"
+            />
           </Link>
         </div>
 
@@ -39,21 +40,10 @@ function LandingPage() {
           >
             <img
               src="/components/x.png"
-              alt="X Icon"
+              alt="x Icon"
               className="w-24 h-24 object-contain transform transition-transform duration-300 hover:scale-90"
             />
           </a>
-          {/* <a
-            href="https://t.me/molang_onsol"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/tele.png"
-              alt="Telegram Icon"
-              className="w-24 h-24 object-contain transform transition-transform duration-300 hover:scale-90"
-            />
-          </a> */}
           <img
             src="/components/buy.png"
             alt="Buy Icon"
@@ -62,21 +52,21 @@ function LandingPage() {
         </div>
       </div>
       <div className="h-full mx-auto">
-        <div className="mx-auto flex-row justify-center pt-1">
-          <div className="w-full flex justify-center">
+        <div className="mx-auto flex-row justify-center pt-20">
+          {/* <div className="w-full flex justify-center">
             <img
               src="/components/create.png"
               alt="Meet Luce Title"
               className="w-1/3 md:w-1/4 object-contain"
             />
-          </div>
+          </div> */}
           <div className="w-full flex justify-center">
             <video
               className="w-3/4 md:w-3/4 object-contain"
-              controls
               autoPlay
               loop
               muted
+              playsInline
             >
               <source src="/components/vid_desc.mp4" type="video/mp4" />
               Your browser does not support the video tag.

@@ -96,7 +96,7 @@ export default function Home() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-full bg-[#96D4E1] p-4">
+    <div className="flex flex-col items-center justify-center min-h-full bg-[#96D4E1] px-6">
       <Head>
         <title>Character Customizer</title>
         <link rel="icon" href="/favicon.ico" />
@@ -105,18 +105,18 @@ export default function Home() {
       {/* Arrow Back Button */}
       <div className="absolute top-5 left-5">
         <Link href="/">
-          <button className="flex items-center space-x-2 bg-white text-teal-700 font-bold py-2 px-4 rounded-full border-2 border-teal-700 hover:bg-teal-500 hover:text-white transition-all duration-300">
+          <button className="flex items-center space-x-2 bg-white text-[#E16EAA] font-bold py-2 px-4 rounded-full border-2 border-[#E16EAA] hover:bg-[#E16EAA] hover:text-white transition-all duration-300">
             <span className="text-xl">←</span> <span>Back</span>
           </button>
         </Link>
       </div>
 
       {/* Header Image */}
-      <div className="w-full flex justify-center mb-4">
+      <div className="w-full flex justify-center mb-2">
         <img
           src="/components/create.png"
           alt="Make Molang Header"
-          className="max-w-[400px] sm:max-w-[100px] lg:max-w-[120px] h-auto object-contain"
+          className="w-[180px] sm:w-[220px] lg:w-[280px] h-auto object-contain"
         />
       </div>
 
@@ -141,7 +141,7 @@ export default function Home() {
                 {/* Left Arrow Button */}
                 <button
                   onClick={() => scroll(category, "left")}
-                  className="p-3 rounded-full bg-[#E09E61] text-white mr-3 hover:scale-105 transition-transform"
+                  className="p-3 rounded-full bg-[#E16EAA] text-white mr-3 hover:scale-105 transition-transform"
                   disabled={currentPage[category] === 0}
                 >
                   &#9664;
@@ -162,7 +162,7 @@ export default function Home() {
                         key={itemIndex}
                         className="p-3 rounded-lg border-2 shadow-md transform hover:scale-110 transition-transform"
                         style={{
-                          borderColor: "#E09E61",
+                          borderColor: "#E16EAA",
                           backgroundColor: "#F7ECD6",
                         }}
                       >
@@ -193,7 +193,7 @@ export default function Home() {
                 {/* Right Arrow Button */}
                 <button
                   onClick={() => scroll(category, "right")}
-                  className="p-3 rounded-full bg-[#E09E61] text-white ml-3 hover:scale-105 transition-transform"
+                  className="p-3 rounded-full bg-[#E16EAA] text-white ml-3 hover:scale-105 transition-transform"
                   disabled={
                     currentPage[category] ===
                     Math.ceil(categories[category] / itemsPerPage) - 1
@@ -272,22 +272,27 @@ export default function Home() {
 
       <div className="mt-2 mb-4 space-x-4">
         <button
-          className="bg-[#F5DDCB] text-black py-2 px-3 rounded border-2 border-black hover:bg-black hover:text-[#F5DDCB]"
+          className="relative group overflow-hidden px-6 py-3 font-semibold rounded-lg border-2 border-pink-500 bg-[#F5DDCB] text-black hover:text-[#F5DDCB] transition-all duration-300 ease-in-out"
           onClick={resetSelections}
         >
-          Reset
+          <span className="absolute inset-0 w-0 bg-pink-500 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+          <span className="relative z-10">Reset</span>
         </button>
+
         <button
-          className="bg-[#F5DDCB] text-black py-2 px-3 rounded border-2 border-black hover:bg-black hover:text-[#F5DDCB]"
+          className="relative group overflow-hidden px-6 py-3 font-semibold rounded-lg border-2 border-pink-500 bg-[#F5DDCB] text-black hover:text-[#F5DDCB] transition-all duration-300 ease-in-out"
           onClick={generateRandomSelection}
         >
-          Randomize
+          <span className="absolute inset-0 w-0 bg-pink-500 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+          <span className="relative z-10">Randomize</span>
         </button>
+
         <button
-          className="bg-[#F5DDCB] text-black py-2 px-3 rounded border-2 border-black hover:bg-black hover:text-[#F5DDCB]"
+          className="relative group overflow-hidden px-6 py-3 font-semibold rounded-lg border-2 border-pink-500 bg-[#F5DDCB] text-black hover:text-[#F5DDCB] transition-all duration-300 ease-in-out"
           onClick={downloadResult}
         >
-          Download
+          <span className="absolute inset-0 w-0 bg-pink-500 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+          <span className="relative z-10">Download</span>
         </button>
       </div>
     </div>
