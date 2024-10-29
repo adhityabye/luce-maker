@@ -55,7 +55,7 @@ function LandingPage() {
             <img
               src="/x.png"
               alt="x Icon"
-              className="w-24 h-24 object-contain transform transition-transform duration-300 hover:scale-90"
+              className="w-24 h-24 object-contain transform transition-transform duration-300 hover:scale-150"
             />
           </a>
           <a
@@ -66,7 +66,7 @@ function LandingPage() {
             <img
               src="/components/buy.png"
               alt="x Icon"
-              className="w-24 h-24 object-contain transform transition-transform duration-300 hover:scale-90"
+              className="w-24 h-24 object-contain transform transition-transform duration-300 hover:scale-150"
             />
           </a>
           {/* <img
